@@ -20,4 +20,17 @@ herBrain.append({
            "-CCC-HHH-",
            "C-C--CHH-"]})
 
-print(herBrain[1]["compMove"],boardStates)
+def printBoard(bstring):
+    print("*"*12)
+    print(bstring[0:3])
+    print(bstring[3:6])
+    print(bstring[6:9])
+
+
+
+
+for i in herBrain:
+    print(i["compMove"], i["gameMove"],boardStates)
+    for j in i["compMove"]:
+        printBoard(j)
+
